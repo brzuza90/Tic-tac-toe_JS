@@ -7,14 +7,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .select-game-mode {
-  margin: 25px auto;
+  margin-top: 25px;
+  margin-left: 10px;
   border: 3px solid   black;
   display: block;
-  width: 20%;
   font-size: 24px;
 }
 .select-game-mode option {
-  text-align: center;
   font-size: 24px;
 }
 .current-player {
