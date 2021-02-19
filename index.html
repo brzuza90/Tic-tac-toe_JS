@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kółko i krzyżyk</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <select id="mode-select" class="select-game-mode">
+    <option value="pvp">PvP</option>
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+  </select>
+  <p class="current-player">
+    <span>Ruch gracza: </span>
+    <span id="current-player"></span>
+  </p>
+
+  <div class="wrapper">
+    <h1>Gra w kółko i krzyżyk</h1>
+    <div class="gameBoard">
+      <div class="gameItem" data-number="0"></div>
+      <div class="gameItem" data-number="1"></div>
+      <div class="gameItem" data-number="2"></div>
+      <div class="gameItem" data-number="3"></div>
+      <div class="gameItem" data-number="4"></div>
+      <div class="gameItem" data-number="5"></div>
+      <div class="gameItem" data-number="6"></div>
+      <div class="gameItem" data-number="7"></div>
+      <div class="gameItem" data-number="8"></div>
+    </div>
+    <p class="info"></p>
+    <button class="resetGame">Restart the game</button>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
