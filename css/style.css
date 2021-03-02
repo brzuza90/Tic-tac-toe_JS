@@ -9,7 +9,7 @@ body {
 .select-game-mode {
   margin-top: 25px;
   margin-left: 10px;
-  border: 3px solid   black;
+  border: 3px solid black;
   display: block;
   font-size: 24px;
 }
@@ -17,7 +17,7 @@ body {
   font-size: 24px;
 }
 .current-player {
-  margin-top: 25px;
+  margin: 15px 0;
   text-align: center;
   font-size: 30px;
   font-weight: bold;
@@ -28,12 +28,10 @@ body {
   color: tomato;
 }
 .wrapper {
-  position: absolute;
   width: 60vw;
+  min-width: 640px;
+  margin: 10px auto;
   padding: 2%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border: 3px solid black;
   border-radius: 15px;
 }
@@ -48,13 +46,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 35vw;
-  height: 35vw;
+  width: 600px;
+
+  min-height: 600px;
 }
 .wrapper .gameBoard .gameItem {
   position: relative;
   width: 31%;
-  height: 31%;
+  margin-bottom: 15px;
   background-color: #aaa;
   border: 2px solid black;
   border-radius: 15px;
@@ -91,7 +90,7 @@ body {
 
 .wrapper button {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 15px;
   padding: 10px 20px;
   background-color: #eee;
   border: none;
@@ -117,4 +116,40 @@ body {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
+}
+@media (max-width: 815px) {
+  .wrapper h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 675px) {
+  .wrapper {
+    width: 90%;
+    min-width: unset;
+  }
+  .wrapper .gameBoard {
+    width: 95%;
+    min-height: 500px;
+  }
+}
+@media (max-width: 480px) {
+  .wrapper h1 {
+    font-size: 24px;
+  }
+  .wrapper .gameBoard {
+    min-height: 400px;
+  }
+}
+@media (max-width: 414px) {
+  .wrapper .gameBoard {
+    min-height: 340px;
+  }
+}
+@media (max-width: 375px) {
+  .wrapper h1 {
+    font-size: 20px;
+  }
+  .wrapper .gameBoard {
+    min-height: 300px;
+  }
 }
